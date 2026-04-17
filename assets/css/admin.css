@@ -1,0 +1,81 @@
+.wne-wrap h1 { margin-bottom: 16px; }
+
+/* Cards */
+.wne-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin-bottom: 18px;
+    max-width: 760px;
+}
+.wne-card h2 { margin-top: 0; font-size: 1.1em; }
+
+/* Signer tabs */
+.wne-signer-tabs { margin-bottom: 14px; }
+.wne-tab-btn {
+    background: #f0f0f1;
+    border: 1px solid #c3c4c7;
+    border-radius: 3px 3px 0 0;
+    padding: 6px 14px;
+    cursor: pointer;
+    margin-right: 2px;
+    font-size: 13px;
+    border-bottom: none;
+}
+.wne-tab-btn.active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+}
+.wne-tab-pane {
+    display: none;
+    border: 1px solid #c3c4c7;
+    border-radius: 0 3px 3px 3px;
+    padding: 14px 16px;
+    background: #fff;
+}
+.wne-tab-pane.active { display: block; }
+
+.wne-status { margin-left: 10px; font-size: 13px; vertical-align: middle; }
+
+.wne-info-box {
+    background: #f0f6fc;
+    border: 1px solid #b3d3ef;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+/* Progress bar */
+.wne-progress-bar-bg {
+    background: #e0e0e0;
+    border-radius: 4px;
+    height: 18px;
+    max-width: 500px;
+    overflow: hidden;
+}
+.wne-progress-bar {
+    background: #2271b1;
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.25s ease;
+}
+
+/* Result rows */
+.wne-result {
+    padding: 7px 12px;
+    margin: 4px 0;
+    border-left: 4px solid #ccc;
+    background: #fafafa;
+    border-radius: 2px;
+    font-size: 13px;
+    max-width: 760px;
+}
+.wne-result-ok      { border-left-color: #46b450; background: #f0fff0; }
+.wne-result-partial { border-left-color: #f0a500; background: #fffbf0; }
+.wne-result-error   { border-left-color: #dc3232; background: #fff0f0; }
+.wne-result-skip    { border-left-color: #999;    background: #f6f6f6; color: #666; }
