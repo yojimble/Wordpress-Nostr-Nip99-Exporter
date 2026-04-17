@@ -52,10 +52,11 @@ class WNE_Admin {
 
         if ( strpos( $hook, 'wne-export' ) !== false ) {
             // nostr-tools browser bundle (exposes window.NostrTools)
+            // Source: https://github.com/nbd-wtf/nostr-tools v2.13.0
             wp_enqueue_script(
                 'nostr-tools',
                 WNE_PLUGIN_URL . 'assets/js/nostr.bundle.js',
-                [], '2.x', true
+                [], '2.13.0', true
             );
 
             wp_enqueue_script(
@@ -89,7 +90,7 @@ class WNE_Admin {
     public function ajax_get_product_ids(): void {
         check_ajax_referer( 'wne_export', 'nonce' );
         if ( ! current_user_can( 'manage_woocommerce' ) ) {
-            wp_send_json_error( 'Insufficient permissions.' );
+            wp_send_json_error( esc_html__( 'Insufficient permissions.', 'woo-nostr-export' ) );
         }
         $ids = WNE_Nostr_Exporter::get_all_product_ids();
         wp_send_json_success( [ 'ids' => $ids, 'total' => count( $ids ) ] );
@@ -99,12 +100,12 @@ class WNE_Admin {
     public function ajax_get_templates_batch(): void {
         check_ajax_referer( 'wne_export', 'nonce' );
         if ( ! current_user_can( 'manage_woocommerce' ) ) {
-            wp_send_json_error( 'Insufficient permissions.' );
+            wp_send_json_error( esc_html__( 'Insufficient permissions.', 'woo-nostr-export' ) );
         }
 
         $ids = array_map( 'intval', (array) ( $_POST['ids'] ?? [] ) );
         if ( empty( $ids ) ) {
-            wp_send_json_error( 'No IDs provided.' );
+            wp_send_json_error( esc_html__( 'No IDs provided.', 'woo-nostr-export' ) );
         }
 
         $batch_templates = [];
