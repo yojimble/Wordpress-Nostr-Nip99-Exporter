@@ -7,8 +7,8 @@ $relays = array_filter( array_map( 'trim', explode( "\n", get_option( 'wne_relay
     <?php if ( empty( $relays ) ) : ?>
         <div class="notice notice-warning">
             <p><?php printf(
-                /* translators: %s: URL to settings page */
-                esc_html__( 'Please %sconfigure relay URLs%s before exporting.', 'woo-nostr-export' ),
+                /* translators: 1: opening link tag, 2: closing link tag */
+                esc_html__( 'Please %1$sconfigure relay URLs%2$s before exporting.', 'woo-nostr-export' ),
                 '<a href="' . esc_url( admin_url( 'admin.php?page=wne-settings' ) ) . '">',
                 '</a>'
             ); ?></p>

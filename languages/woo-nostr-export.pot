@@ -1,0 +1,149 @@
+# Copyright (C) 2026 Your Store
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Nostr Export 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plugin\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-17T20:54:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: woo-nostr-export\n"
+
+#. Plugin Name of the plugin
+#: wordpress-nostr-export.php
+msgid "WooCommerce Nostr Export"
+msgstr ""
+
+#. Description of the plugin
+#: wordpress-nostr-export.php
+msgid "Export WooCommerce products to Nostr relays as NIP-99 classified listings (kind 30402). Handles simple products, variable products, attributes, and stock levels. Signing is done in the browser — no server-side crypto dependencies required."
+msgstr ""
+
+#. Author of the plugin
+#: wordpress-nostr-export.php
+msgid "Your Store"
+msgstr ""
+
+#: admin/class-admin.php:93
+#: admin/class-admin.php:103
+msgid "Insufficient permissions."
+msgstr ""
+
+#: admin/class-admin.php:108
+msgid "No IDs provided."
+msgstr ""
+
+#: admin/views/export-page.php:5
+msgid "Nostr Export &mdash; Products"
+msgstr ""
+
+#. translators: 1: opening link tag, 2: closing link tag
+#: admin/views/export-page.php:11
+#, php-format
+msgid "Please %1$sconfigure relay URLs%2$s before exporting."
+msgstr ""
+
+#: admin/views/export-page.php:20
+msgid "Step 1 &mdash; Connect Signer"
+msgstr ""
+
+#: admin/views/export-page.php:21
+msgid "Your private key never leaves the browser. Choose how to sign events:"
+msgstr ""
+
+#: admin/views/export-page.php:24
+msgid "Browser Extension (NIP-07)"
+msgstr ""
+
+#: admin/views/export-page.php:25
+msgid "Remote Signer / Amber (NIP-46)"
+msgstr ""
+
+#: admin/views/export-page.php:26
+msgid "Private Key"
+msgstr ""
+
+#: admin/views/export-page.php:31
+msgid "Use a browser extension like Alby, nos2x, or Nostore that injects window.nostr."
+msgstr ""
+
+#: admin/views/export-page.php:32
+msgid "Connect Extension"
+msgstr ""
+
+#: admin/views/export-page.php:38
+msgid "For Amber (Android) or any NIP-46 bunker. Paste the bunker:// URI shown by your signer app."
+msgstr ""
+
+#: admin/views/export-page.php:41
+msgid "Connect Bunker"
+msgstr ""
+
+#: admin/views/export-page.php:47
+msgid "Enter your hex or nsec1... private key. It is used only in this browser tab and is never sent to the server."
+msgstr ""
+
+#: admin/views/export-page.php:50
+msgid "Use Key"
+msgstr ""
+
+#: admin/views/export-page.php:56
+msgid "Signed in as:"
+msgstr ""
+
+#: admin/views/export-page.php:62
+msgid "Step 2 &mdash; Export"
+msgstr ""
+
+#: admin/views/export-page.php:66
+msgid "Relays:"
+msgstr ""
+
+#: admin/views/export-page.php:72
+msgid "Products are exported as NIP-99 classified listings (kind 30402). Variable products publish one event per variation, each tagged with its attributes, price, and stock level."
+msgstr ""
+
+#: admin/views/export-page.php:76
+msgid "Export All Products to Nostr"
+msgstr ""
+
+#: admin/views/export-page.php:79
+msgid "Connect a signer above before exporting."
+msgstr ""
+
+#: admin/views/settings-page.php:3
+msgid "Nostr Export &mdash; Settings"
+msgstr ""
+
+#: admin/views/settings-page.php:11
+msgid "Relay URLs"
+msgstr ""
+
+#: admin/views/settings-page.php:20
+msgid "One relay URL per line (must start with wss://)."
+msgstr ""
+
+#: admin/views/settings-page.php:25
+msgid "Blossom Server URL"
+msgstr ""
+
+#: admin/views/settings-page.php:36
+msgid "Product images will be uploaded to this Blossom server (BUD-01) before publishing, making listings fully independent of your WordPress site."
+msgstr ""
+
+#: admin/views/settings-page.php:37
+msgid "Leave empty to use your existing WordPress image URLs instead."
+msgstr ""
+
+#: admin/views/settings-page.php:44
+msgid "Signing keys are never stored on the server. You will connect your Nostr signer (browser extension, Amber, or enter your key directly) on the Export page when you run an export."
+msgstr ""
+
+#: admin/views/settings-page.php:47
+msgid "Save Settings"
+msgstr ""
