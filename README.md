@@ -2,7 +2,9 @@
 
 Export your WooCommerce products to Nostr as [NIP-99 classified listings](https://github.com/nostr-protocol/nostr/blob/master/99.md) (kind 30402), compatible with the [GammaMarkets marketplace protocol](https://github.com/GammaMarkets/market-spec).
 
-Listings are viewable on Nostr marketplace clients such as [Shopstr](https://shopstr.store) and [Amethyst](https://github.com/vitorpamplona/amethyst).
+Listings become available across all Nostr marketplace clients such as; [Plebeian Market](https://plebeian.market), [Shopstr](https://shopstr.store), [Plume](https:/plume.website), [Iris](https://iris.to) and [Amethyst](https://github.com/vitorpamplona/amethyst).
+
+Self host your own nostr shop for free with [Cypher Stores](https://cypher.space) [Github](https://github.com/cypher-space/Cypher-Nostr-Edition)
 
 ---
 
